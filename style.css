@@ -47,4 +47,5 @@ input::-webkit-inner-spin-button {
   border: none;
   border-radius: 25px;
   padding: 10px 15px;
+  cursor: pointer;
 }
