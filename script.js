@@ -6,6 +6,8 @@ submitButton.addEventListener("click", () => {
     console.log("please enter numeric value");
     return;
   }
+  submitButton.disabled = true;
+  input.disabled = true;
   countUpdate(parseInt(input.value));
 });
 
@@ -16,6 +18,8 @@ let countUpdate = (num) => {
   num--;
 
   if (num < 0) {
+    submitButton.disabled = false;
+    input.disabled = false;
     return (countValue.textContent = "Done");
   }
 
