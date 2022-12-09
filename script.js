@@ -4,7 +4,6 @@ let input = document.querySelector("#numInput");
 submitButton.addEventListener("click", () => {
   if (input.value.length <= 0) {
     alert("please enter numeric value")
-    // console.log("please enter numeric value");
     return;
   }
   submitButton.disabled = true;
